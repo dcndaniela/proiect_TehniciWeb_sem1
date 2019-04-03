@@ -1,0 +1,9 @@
+window.onload=function(){
+var x2=document.querySelector("li");
+x2.onclick=function(){
+alert(x2.InnerHTML);
+x2.InnerHTML+="<span>Nou</span>";
+
+
+}
+}

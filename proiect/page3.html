@@ -1,0 +1,520 @@
+
+<html lang="ro">
+<head>
+ <!--<link rel="stylesheet" href="p3.css">
+ <script src="j3.js"></script>  -->
+<title>Peluza</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" 
+crossorigin="anonymous">
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+  
+   
+  <style>
+  
+
+h1{font-size:3vw;}
+h2{font-size:1.5vw;}
+h3{font-size:1vw;}
+h4{font-size:1.5vw;}
+
+
+div.example{
+	background-color: lightgreen;
+	padding:20px;}
+@media screen and (max-width: 600px) {
+  div.example {
+    display: none;
+  }
+}
+
+
+.text1{
+color:purple;
+margin-left:30px;
+}
+
+.text2{
+margin-left:900px;
+color:white;}
+
+.sigla{
+	height:40%;
+width:auto;
+font-size:1.5vw;}
+
+body{
+background: linear-gradient(-140deg, #ff3333, white, #3385ff);
+font-size:2vw;}
+
+img{
+	 border: 10px solid transparent;
+    padding: 15px;
+	border-radius:50px 20px;
+	width:20%;
+	height:auto;
+}
+
+p{
+	margin-left:40px;
+margin-right:40px;}
+
+.acum{
+	color:#800080;
+}
+
+
+.my{
+width:60%;}
+
+.but{
+margin-left:1185px;
+background-color:lightblue;
+color:blue;
+	 display: inline-block;
+	 padding:10px 11px;
+    cursor: pointer;
+}
+
+
+.button1 {
+    background-color: gray;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: left;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+	
+}
+
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button1 span:before {
+  content: '\00bb';
+  position: absolute;
+  opacity: 20;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+.button1:hover span {
+  padding-left: 25px;
+}
+
+.button1:hover span:before {
+  opacity: 1;
+  left: 0;
+}
+
+.button {
+    background-color: gray;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: right;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+	
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.c2{
+	color:white;
+border:doted yellow;}
+
+.example {
+    padding: 20px;
+    color: white;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .example {background: red;}
+}
+
+/* Small devices */
+@media only screen and (min-width: 600px) {
+    .example {background: green;}
+}
+
+/* Medium devices */
+@media only screen and (min-width: 768px) {
+    .example {background: blue;}
+} 
+
+/* Large devices */
+@media only screen and (min-width: 992px) {
+    .example {background: orange;}
+} 
+
+/* Extra large devices  */
+@media only screen and (min-width: 1200px) {
+    .example {background: pink;}
+}
+
+/*containerele 1,2,3,4 */
+
+.flex-container {
+  display: flex; /*elem se aliniaza pe orizontala */
+  align-items: stretch; /* se extinde */
+  background-color: #f1f1f1;
+}
+
+.flex-container>div {
+  background-color: DodgerBlue; /*culoarea fiecarei casute din flexbox */
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.imm{
+width:50%;
+border:none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%; /*  lungimea flexibila*/
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+body {
+  margin: 0;
+  font-size: 28px;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky { 
+  position: fixed;/*ramane in acelasi loc indiferent dacaa pagina e scroll-ata */
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+
+@media (min-width: 768px) {
+.carousel-multi-item-2 .col-md-3 {
+float: left;
+width: 25%;
+max-width: 100%; } }
+
+.carousel-multi-item-2 .card img {
+border-radius: 2px; }
+
+  
+  </style>
+  
+  
+  <script>
+  
+   window.onload=function(){	
+	document.getElementById("c2").addEventListener("click", function(event){
+  event.preventDefault()
+});  //blocheaza executia lui Atmosfera din timpul meciurilor
+
+}  
+function myFunction() {
+    var x = document.createElement("FIGCAPTION");
+    var t = document.createTextNode("Pasiune mai presus de echipa");
+    x.appendChild(t);
+ 
+    var y = document.getElementById("myFigure");
+y.appendChild(x);
+}
+
+
+function myFunc() {
+	var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;/*returneaza top position(in pixeli) relativ fata de top position pentr offsetParinte 
+*/
+
+  if (window.pageYOffset >= sticky) {
+  navbar.classList.add("sticky")
+  } else {
+  navbar.classList.remove("sticky");
+  }
+}
+
+  </script>
+  
+  
+  
+  
+  
+  
+</head>
+<header><i>
+
+
+<div class="cotainer">
+<h6>
+Ca să îşi apere "muza",
+Preferă mereu... peluza...</h2></i></header>
+</h6>
+
+
+<body>
+
+
+
+
+<h3>
+<span style="color:red";> CSA  </span> <span style="color:blue";> STEAUA </span> 
+ <img class="sigla" src="sigla.jpg"   align="right"> 
+</p>
+</h3>
+
+  <center>
+ <h4> <a href="pr1.html">Home</a>|<a href="page2.html">Scurt istoric</a>|<b>Peluza</b>|<a href="page4.html">Stadionul</a> </h4>
+  </center> 
+
+
+
+<figure id="myFigure" >
+<img class="my" src="1947.jpg" alt="Peluza"> </figure>
+<button class="but" onclick="myFunction()" > Motto </button>
+  
+ <aside>
+ <center><h4><div class="example">Nord vs Sud </div></h4></center>
+ <h4><p>Peluza Nord Steaua </p></h4>
+</aside> 
+ <h5> 
+<p> <div class="text1"> -> a luat ființă în anul 1995 și este susținătoarea echipei cu cei mai mulți fani din România, Steaua. De asemenea, echipa din Ghencea este susținută și de un grup de suporteri din peluza sud,
+ numiți <b>Peluza Sud Steaua</b>.<br>-> Aceștia din urmă sunt mai puțin numeroși însă sunt considerați mai ultra decât cei din nord.
+ Galeria Stelei face parte dintr-o frăție ortodoxă, din care mai fac parte galeriile lui Partizan Belgrad, 
+ ȚSKA Sofia și PAOK Salonic, având legături strânse și în țară cu galeriile echipelor UTA Arad, Corvinul Hunedoara și Farul Constanța.
+ <br>-> De asemenea, au relații amicale cu suporterii echipei NEC Nijmegen.In prezent, doar o parte din grupurile Peluzei Nord susțin FCSB, 
+ precum Nucleo, deoarece nu o recunosc ca fiind FC Steaua.<br>In schimb, Peluza Sud Steaua împreună cu majoritatea grupurilor de suporteri 
+ vechi din Peluza Nord susțin CSA Steaua.
+<br>-> Steaua este cea mai iubită echipă din fotbalul românesc, 44% dintre microbiști fiind suporteri steliști.</div> </p>
+ </h5>
+<h4>
+ <center><img class="editimg"id="ss3" src="img3.jpg" alt="sud2"> 
+<img src="img5.jpg" alt="sud3"> 
+ <img id="s1" src="img1.jpg" alt="sud1">
+ </center>
+ 
+ <center>
+ <img src="ultras.jpg">
+ <img src="ultras3.jpg">
+ <img src="ultras4.jpg">
+ </center>
+ </h4>
+ 
+ <body onscroll="myFunc()">
+
+
+<div id="navbar">
+  <a class="active" <!-- linkul activ --> href="https://www.google.ro/search?q=csa+steaua+liga+4&source=lnms&tbm=nws&sa=X&ved=0ahUKEwj72YDPrtzfAhXC2qQKHRecDRMQ_AUIDygC&biw=1366&bih=636">Știri</a>
+  <a href="https://www.frf-ajf.ro/bucuresti/competitii-fotbal/liga-4-6934/csa-steaua-6392.html">Curiozități</a>
+  <a href="http://www.csasteaua.ro/sponsorizari/">Sponsorizări</a>
+</div>
+ 
+ 
+<div class="content">
+ <h2 class="acum">
+ <h5>
+<p>14.04.2018:Academia Rapid a obținut o nouă victorie în fața Stelei, scor 3-1, a treia din 4 partide directe în acest sezon, 
+și a câștigat Cupa României faza pe București. Partida s-a disputat pe stadionul Dinamo, iar în tribune a fost și Marius Șumudică.</p> 
+<p><i>Echipa de fotbal Academia Rapid a învins, sâmbătă, cu scorul de 3-1, formaţia CSA Steaua într-o partidă disputată pe Arena Naţională 
+din Capitală, în cadrul etapei a 23-a a Ligii a IV-a.</i></p>
+
+<p>Golurile au fost marcate de D. Niculae (minutul 41), Burlacu (minutul 55), Vlada (minutul 60) pentru Rapid şi Predescu (minutul 45+7 pen.) pentru CSA Steaua. Partida s-a bucurat de o asistenţă numeroasă.
+</p> 
+<p><i>Meciul de pe Arena Naţională a fost întrerupt în mai multe rânduri. Prima oară în debutul partidei pentru un minut din cauza fumigenelor şi artificiilor aruncate pe gazon de galeria rapidistă.</i></p>
+<p> Apoi, în minutul 25 arbitrul Marcel Bârsan a oprit jocul din cauza violenţelor din tribune produse de membrii celor două galerii. Aproximativ 20 de reprezentanţi ai galeriei CSA Steaua 
+au încercat să ajungă până la galeria adversă din peluza opusă.</p>
+<p> <i>Suporterii rapidişti au ripostat şi au avut loc ciocniri pe primele rânduri ale tribunei a II-a. Fiind mai numeroşi, fanii rapidişti au 
+respins atacul steliştilor, care s-au retras după câteva minute.</i>
+</p></h5>
+</h2>
+   
+</div>
+   
+<center>
+<img src="ac1.jpg">
+<img src="ac3.jpg">
+</center>
+
+<a id="c2" href="https://www.facebook.com/1586400941629811/posts/2167151903554709/"> Liderii de Galerie:</a></p>
+ 
+  <div class="flex-container">
+  <div style="order: 3"><h6>Marinescu Ianis</h6></div>
+  <div style="order: 2"><h6>Iordache Cosmin</h6></div>
+  <div style="order: 4"><h6>Titu Andrei</h6></div> 
+  <div style="order: 1"><h6>Ivan Marius</h6></div>
+   <div style="order: 5"><h6>Achim Alexandru</h6></div> 
+</div>
+
+  </div>
+   
+   
+   
+   <div class="header">
+  <p>- momente live -</p>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="img1.jpg" style="width:100%">
+    <img src="ultras.jpg" style="width:100%">
+   
+  </div>
+  
+  <div class="column">
+    <img src="ultras3.jpg" style="width:100%">
+    <img src="img7.jpg" style="width:100%">
+  
+  </div> 
+   
+  <div class="column">
+    <img src="i1.jpg" style="width:100%">
+    <img src="i2.jpg" style="width:100%">
+  
+  </div>
+  
+  <div class="column">
+    <img src="img5.jpg" style="width:100%">
+    <img src="img3.jpg" style="width:100%">
+  
+  </div>
+</div>
+
+   
+   
+   
+   
+  <footer>
+  <div class="text2"><p><h4>Date de contact <a href="mailto: contact@csasteaua.ro">contact@csasteaua.ro</a></h4></p></div>
+</footer>
+
+
+  <form action="file:///C:/Users/Dani/Desktop/licenta-info/an2/teh_Web/proiect1/page2.html" method="get">
+  <button class="button1" formaction="file:///C:/Users/Dani/Desktop/licenta-info/an2/teh_Web/proiect1/page2.html"><span>Prev</span></button>
+ 
+
+<form action="file:///C:/Users/Dani/Desktop/licenta-info/an2/teh_Web/proiect1/page4.html" method="get">
+  <button class="button" formaction="file:///C:/Users/Dani/Desktop/licenta-info/an2/teh_Web/proiect1/page4.html"><span>Next</span></button>
+</body>
+
+  </html>

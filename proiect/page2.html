@@ -1,0 +1,507 @@
+<!Doctype>
+
+<html lang="ro">
+<head>
+<!-- <link rel="stylesheet" href="css2.css">
+  <script src="j2.js"></script>  -->
+  
+  
+  <style>
+  
+  
+body{
+background: linear-gradient(-140deg, #ff3333, white, #3385ff);
+font-size:2vw;}
+img{
+	width: 20%;
+height: auto;
+font-size:2vw;
+}
+
+h1{font-size:3vw;}
+h2{font-size:1.5vw;}
+h3{font-size:1vw;}
+h4{font-size:1.5vw;}
+
+
+#titlu{
+color:blue;}
+
+h1, h2, h3, h4, h5{
+	margin-left:40px;
+margin-right:40px;}
+
+.sigla{
+	height:40%;
+width:auto;
+font-size:1.5vw;}
+
+viz1{
+margin: 200px 30px;
+}
+
+
+.unu{
+	position:absolute; /* img are poz relativa fata de prima pozitionare a elem stramos */
+margin-left:900px;
+	width:100%;
+height:auto;
+z-index:-1; /* imag e pozitionata in spatele textului */
+}
+	
+#fata{
+margin-left:900px;
+color:green;
+}
+	
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;  /* meniul dropdown e afisat chiar sub buton */
+    background-color: #ffffcc;
+    min-width: 160px;
+  
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: gray;}
+
+.dropdown:hover .dropdown-content {display: block;} /*afis meniul dropdown cand trece mouse-ul */
+
+.dropdown:hover .dropbtn {background-color: green;}
+
+ul {
+    display: grid;
+    list-style-type: disc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+.button1 {
+    background-color: gray;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: right;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+	
+}
+
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button1:hover span {
+  padding-left: 25px;
+}
+
+.button1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+.button {
+    background-color: gray;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: right;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+	
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.patrat{ display:inline-block;  width:150px; height:150px;  
+             background-color:violet;}
+.peste{ position:absolute; }
+
+#drept{ display:inline-block;  width:40px; height:100%; 
+             background-color:pink;
+             position:absolute;  left:30px;}
+
+img2{
+width:2%;
+height:auto;
+font-size:2vw;}	
+	
+
+div.mare {
+    position: relative;
+    width: 300px;
+    height: 150px;
+    border: 3px solid #73AD21;
+} 
+
+div.mic {
+    position: absolute;
+    top: 105px;
+    right: -1;
+    width: 100px;
+    height: 40px;
+    border: 3px solid #73AD21;
+	
+}
+
+div.p3{
+	color: #990099;
+    width: 900px;
+    border: 15px dotted #99ff66;
+    padding: 20px;
+    margin: 10px;
+}
+div.p4{
+	color:   #666633;
+    width: 900px;
+    border: 15px dotted yellow;
+    padding: 20px;
+    margin: 10px;
+	margin-left:330px;
+}
+
+.edit1{
+margin-left:1100px;
+width:200px;
+font-size:2vw;
+}
+
+
+.edit{
+width:200px;
+font-size:2vw;
+}
+
+#eeu{
+  color:#ff6666;
+}
+
+#font2{
+color:green;}
+
+
+#font3{
+color:#009999;}
+
+  
+  </style>
+  
+  
+  <script>
+  
+  window.onload=function(){
+	// repeat with the interval of 2 seconds
+let timerId = setInterval(afis, 5000);
+
+// after 3 seconds stop
+setTimeout(function(){clearInterval(timerId); alert('Thank you!');}, 6000);
+	
+}
+
+function afis(){
+	alert('We use cookies to provide our services and for analytics and marketing.To find out more about our use of cookies, please see our Privacy Policy. By continuing to browse our website, you agree to our use of cookies.')
+}
+
+
+var myWindow;
+
+function openWin() {
+  myWindow = window.open("https://www.w3schools.com/jsref/prop_element_children.asp", "myWindow", "width=200,height=100");
+  myWindow.document.write("Esti vizitatorul nostru cu numarul 200.004;     Iti multumim ca ne urmaresti!");
+  
+   var c = document.getElementById("eeu").children;
+  c[1].style.backgroundColor = "yellow";
+
+   var x = document.getElementById("eeu");
+  
+   if (x.className =="mystyle") { 
+    x.style.fontSize = "30px";
+
+}
+}
+
+
+function closeWin() {
+  myWindow.close();
+}
+
+
+  
+function myf(event) { 
+  alert("Acest site utilizeaza cookies");
+}
+
+function showCoords(event) {
+  var x = event.pageX;
+  var y = event.pageY;
+  var coords = 'X coords: ' + x + ', Y coords: ' + y;
+  document.getElementById("demo").innerHTML = coords;
+}
+
+
+  </script>
+  
+  
+  
+  
+<title>Scurt istoric</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" 
+crossorigin="anonymous">
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<div class="cotainer">
+<body>
+<h4>
+<span id="titlu"> CSA STEAUA </span> 
+ <img class="sigla" src="sigla.jpg"  align="right">  
+</p>
+</h4>
+<h5>
+  <center>
+  <a href ="pr1.html">Home</a>|<b>Scurt istoric</b>|<a href ="page3.html">Peluza</a>|<a href="page4.html">Stadionul</a>
+  </center>
+  </h5>
+  
+
+<iframe id="super" height="300px" width="500px" src="demo_iframe.htm" name="iframe_a">
+</iframe>
+<p onclick="myf(event)"> <a href="http://www.csasteaua.ro/category/istoric/" target="iframe_a"> Detalii suplimentare</a></p>
+<center><b>Istoric</b></center>
+<p id="demo"></p>
+
+<p><h6 onclick="showCoords(event)">Vechea tradiție a practicării sportului în Armata Română a condus la înființarea, în 1947, a Asociației Sportive Armata;
+Aceasta a reprezentat punerea în practică a preocupărilor unor mari iubitori ai sportului – printre care generalul-maior Dumitru Petrescu, generalul-maior Oreste Alexandrescu, comandorul Traian Săvulescu, locotenent-colonelul Ion Costăchel, maiorul Cornel Șandru – care începuseră să poarte discuții în acest sens încă din vara anului 1946;
+Înființarea A.S. Armata a răspuns necesității ca tinerii sportivi încorporați pentru a satisface stagiul militar să continue, în mod organizat, desăvârșirea măiestriei lor sportive; totodată, aceasta a avut drept scop să se dea posibilitatea talentelor afirmate din rândurile cadrelor permanente ale armatei de a se realiza și pe tărâmul activității sportive de performanță;></p>
+
+<p>1948</p>
+<img class="edit" src="1948.jpg">
+<div class="p4">
+<p> <ol><li>Se înființează 5 secții sportive: motociclism, rugby, handbal, baschet, ciclism;</li>
+<li>AS Armata se transformă în Clubul Sportiv Central al Armatei;</li>
+<li>Atletul Dumitru Tălmaciu devine primul sportiv militar care doboară un record al României, în proba de 3.000 m. </li></ol></p></div>
+<p>1949</p>
+<div>
+<img class="edit1" src="1949.jpg">
+<div class="p3">
+<p><ol><li>Iau ființă secțiile de natație, polo pe apă, lupte, canotaj, kaiac-canoe;
+</li><li>Se înființează și secția de alpinism, care ulterior va fi transferată la Brașov;
+</li><li>Echipa de rugby aduce clubului primul titlu de Campioană Națională de echipe;
+</li><li>Echipa de fotbal cucerește primul său titlu de Campioană a României;</li></ol></h2> </p>
+</div></p>
+</div>
+
+<p>1950</p>
+<img class="edit" src="1950.jpg">
+<div class="p4">
+<p><ol><li>Clubul își schimbă din nou denumirea, devenind Casa Centrală a Armatei;</li>
+<li>Ion Vasilov cucerește titlul de campion național la box, primul din istoria secției;</li>
+<li>Începe dominația pe plan național a secției de motociclism (18 titluri), care va continua încă 7 ani;</li>
+<li>Prima victorie în campionatul național de scrimă a sportivilor militari, realizată de către formația de sabie;</li></ol> </p></div>
+<p>1951</p>
+<img class="edit1" src="1951.jpg">
+<div class="p3">
+<p><ol><li>Primul event realizat de echipa de fotbal: campioană națională cu 32 de puncte, golaveraj 46-16 și câștigătoare a Cupei României prin victoria cu 3-1 în finala cu <b>Flacăra Mediaș</b>;</li>
+<li>Primii campioni naționali și pentru secția de haltere, prin Ștefan Achim și Illie Dancea;</li>
+<li>Ioan Söter cucerește locul I la Campionatele Internaționale de Atletism ale României;</li></ol></p>
+</div>
+<p>1952</p>
+<img class="edit" src="1952.jpg">
+<div class="p4">
+<p><ol><li>Sportivii militari participă pentru prima dată la o ediție a Jocurilor Olimpice, cea de la Helsinki;
+</li><li>Prima medalie olimpică de aur din istoria sportului românesc este cucerită, la această olimpiadă, de către trăgătorul Iosif Sârbu, în proba de pușcă;
+</li><li>Boxerii Vasile Tiță și Gheorghe Fiat cuceresc, tot la Helsinki, medaliile olimpice de argint, respectiv de bronz;
+</li><li>Se înființează secția de bob;</p></li></ol> </div>
+
+<p> 1953</p>
+<img class="edit1" src="1953.jpg">
+<div class="p3">
+<p><ol><li> Primul titlu național pentru secția de bob, prin echipajul Ciplea – Blăgescu;
+</li><li>Echipa de haltere câștigă, pentru prima dată, campionatul național, halterofilii militari stabilind 22 de recorduri naționale;
+</li><li>Trăgătorul Iosif Sârbu și boxerul Gheorghe Fiat primesc primele carnete de ”maestru emerit ale sportului”;</li></ol></p></div>
+<p>1954</p>
+<img class="edit" src="1954.jpg">
+<div class="p4">
+<p><ol><li>Iolanda Balaș (înălțime), Mircea Dobrescu (box), Victor Dumitrescu, Traian Ivănescu și Nicolae Tătaru (fotbal) devin campioni mondiali universitari;
+</li><li>Echipa de handbal câștigă titlul național cu 10 puncte în avans;</li>
+<li>Se completează secția de pentatlon modern cu ofițeri selecționați de la cursul de perfecționare a ofițerilor cu pregătirea fizică;
+</li><li>Prima medalie europeană a secției de atletism – argint – este cucerită de Iolanda Balaș la înălțime, femei – aer liber;</li></ol></p></div>
+<p>1955</p>
+<img class="edit1" src="1955.jpg">
+<div class="p3">
+<p><ol><li>În formația Toma, V. Zavoda, Dumitresu – Onisie, Caricaș, Bone – V. Moldovan, Constantin, Alexandrescu, F. Zavoda, Tătaru, echipa de fotbal cucerește Cupa României, după o finală dramatică cu Progresul Oradea 6-3 (0-1; 3-3);
+</li><li>Ilie Tudor câștigă turneul internațional de spadă de la Leipzig;
+</li><li>Mircea Dobrescu obține medalia de argint la Campionatele Europene de Box de la Berlin;</li></ol></p></div>
+<p>1956</p>
+<img class="edit" src="1956.jpg">
+<div class="p4">
+<p><ol><li>Două medalii de argint pentru schioarea Magdalena Marotineanu (coborâre și slalom), la Jocurile Mondiale Universitare de Iarnă;
+</li><li>Primul record mondial al clubului militar – stabilit de Iolanda Balaș în proba de săritură în înălțime (primul din cele 14 recorduri mondiale, câte au intrat în palmaresul acestei atlete de excepție);
+</li><li>Boxerii Gheorghe Negrea și Mircea Dobrescu, ca și floretista Olga Orban, cuceresc medalii de argint la J.O. de la Melbourne;</li></ol></p></div>
+<p>1957</p>
+<img class="edit1" src="1957.jpg">
+<div class="p3">
+<p><ol><li> Gheorghe Negrea cucerește medalia de aur la Campionatele Europene de box de la Praga, devenind astfel primul campion european al clubului;
+</li><li>CCA câștigă Cursa Munților la ciclism;</li>
+<li>Pentatloniștii – campioni naționali pe echipe și individual (Dumitru Țintea); </li></ol></p></div>
+<p>1958</p>
+<img class="edit" src="1958.jpg">
+<div class="p4">
+<p> <ol><li>Atleta Iolanda Balaș realizează 5 Recorduri Mondiale la săritura în înălțime;
+</li><li>Echipa de fotbal ajunge în optimile de finală ale Cupei Campionilor Europeni;</li>
+<li>Medalie de aur la Campionatele Europene pentru Iolanda Balaș – prima medalie europeană de aur a secției;</li></ol> </p> </div>
+<p>1971</p>
+<img class="edit1" src="1971.jpg">
+<div class="p3">
+<p><ol><li>În Sala ”Pierre de Coubertin” din Paris, Ilie Năstase dă un adevărat recital în Turneul Campionilor, învingându-i , pe rând, pe Cliff Richey, Clark Graebner, Jan Kodes, Zelinko Franulovici și, în finală, pe Stan Smith;
+</li><li>Ilie Năstase urcă pe locul 1 în topul european și pe 3 în cel mondial, după australianul John Newcombe și americanul Stan Smith;
+</li><li>Din nou Ilie Năstase este ”cel mai bun sportiv al României”.</li></ol></p></div>
+<p>2011</p>
+<img class="edit" src="2011.jpg">
+<div class="p4">
+<p><ol><li>La campionatul mondial de Shotokan de la Moscova, Cristina Panait câștigă medalia de aur cu echipa României și medalia de argint la individual;
+</li><li>Selina Alexandrescu se impune la Campionatul Balcanic de Călărie de la Istanbul, cucerind medalia de aur în proba de dresaj;
+</li><li>Stelistele Eniko Mironcic, Ionelia Zaharia și Roxana Cogianu își păstrează titlul de campioane europene impunându-se la Bled, în Slovenia, cu echipajul de 8+1 al României;
+  </li><li>Echipa de spadă feminin a CSA Steaua formată din Ana-Maria Brânză, Simona Alexandru și Anca Măroiu, câștigă, pe rând, Cupa Campionilor Europeni de la Napoli, Campionatul European de seniori de la Sheffield și Campionatul Mondial Militar de la Rio de Janeiro;
+  </li><li>La Campionatul European de Tir de la Belgrad, Serbia, junioara Roxana Tudose cucerește medalia de aur și titlul de campioană europeană în proba de pușcă 60 focuri culcat, stabilind totodată și un nou record național al probei;
+ </li></ol></p></div>
+ </h6>
+
+<div class="mare"><h6>Pentru modele de echipament accesati butonul de mai jos:</h6>
+ <h6> <div class="mic">Steaua=CSA!</div></h6>
+  
+  
+
+<h6>
+ <div class="dropdown">
+  <button class="dropbtn">Echipament</button>
+  <div class="dropdown-content">
+    <a href="https://www.magazinsteaua.ro/ro/produse-fc-steaua-copii/">Pentru copii</a>
+    <a href="https://www.magazinsteaua.ro/ro/produse-pentru-fotbal-barbati-fc-steaua/">Pentru barbati</a>
+    <a href="https://www.magazinsteaua.ro/ro/produse-pentru-fotbal-femei-fc-steaua/">Pentru femei</a>
+  </div>
+</div>
+</h6>
+<br>
+
+<img class="unu" src="img7.jpg"><div id="fata">Peluza(2017)</div> 
+<br>
+<br>
+<h6>
+<div id="font2"> Vezi daca esti norocosul suporter cu numarul 1.000.000 care viziteaza site-ul si poti castiga 2 bilete la Campionatul European de anul acesta!
+</div>
+<br>
+<button type="button" class="btn btn-info" onclick="openWin()">Afla acum!</button>
+<br><br>
+<button type="button" class="btn btn-info" onclick="closeWin()">Incerc data viitoare</button>
+
+
+<div id="eeu" class="mystyle">
+<p>Felicitari!! </p>
+<p>Ne pare rau! Mai incearca</p>
+</div>
+</h6>
+
+<br>
+<div id="font3">
+<h6> Selectati raspunsul corect: <br>In ce an a fost infiintat clubul? </h6>
+
+
+
+<form action="an.jpg"> <!-- trimite form-data catre "an.jpg" pt procesarea inputului  -->
+  <input type="checkbox" name="vehicle" value="Bike"> 1946<br>
+  <input type="checkbox" name="vehicle2" value="Car"> 1948<br>
+  <input type="checkbox" name="vehicle3" value="Boat" checked>1949<br><br>
+  <h6><button type="button" class="btn btn-warning">Submit</button></h6>
+</form>
+</div>
+
+
+
+ <form action="file:///C:/Users/Dani/Desktop/licenta-info/an2/teh_Web/proiect1/pr1.html" method="get">
+  <button class="button1" formaction="file:///C:/Users/Dani/Desktop/licenta-info/an2/teh_Web/proiect1/pr1.html"><span>Prev</span></button>
+
+<form action="file:///C:/Users/Dani/Desktop/licenta-info/an2/teh_Web/proiect1/page3.html" method="get">
+  <button class="button" formaction="file:///C:/Users/Dani/Desktop/licenta-info/an2/teh_Web/proiect1/page3.html"><span>Next</span></button>
+</div>
+
+
+  
+ </body>
+</html>

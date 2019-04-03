@@ -1,0 +1,116 @@
+body{
+background: linear-gradient(-140deg, #ff3333, white, #3385ff);
+font-size:2vw;
+}
+
+h1{font-size:3vw;}
+h2{font-size:1.5vw;} #viewport
+h3{font-size:2vw;}
+h4{font-size:1.5vw;}
+.sigla{
+	height:30%;
+width:auto; /*latime default */
+font-size:1vw;}
+
+
+.videos{
+color: #993d00;}
+	
+.stiu{
+	 background-color:  #ccccff;
+    color: white;
+    margin: 20px;
+padding: 20px;
+width:60%;
+}
+.jucat2{
+margin:20px 190px;}
+
+img{
+	width: 20%;
+height: auto;}
+h1{
+text-align: center;}
+
+.c1:visited {
+color: yellow;} /*devine galben dupa ce se da click pe el */
+
+/* cand trece mouse-ul peste */
+.c1:hover {
+color: pink;}
+
+.c1:active {color: red;} /* cand dai click pe el */
+.c2{color: white;
+ width: 120px;
+  height: 60px;
+  background-color: yellow;
+   margin-left:240px;
+}
+
+
+#ed1{
+	  margin: auto;
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+  background-color: coral;
+  color: white;
+  -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+  animation: mymove 5s infinite; //numele_animatiei--durata_miscarii--timp de executie
+}
+
+@-webkit-keyframes mymove { /* keyframe-codul animatiei; 0%- inceputul animatiei */
+  0% {transform: rotate(180deg);}
+}
+
+
+
+.button {
+    background-color: gray;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: right;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+	
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative; /* poz fata de pozitia lui normala*/
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb'; /* >> */
+  position: absolute; /* pozitionat relativ fata de cel mai apropiat stramos */
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span { /*cand trec cu mouse-ul peste el */
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#userInput{
+color:gray;}
+
+.font1{
+color:gray;}
+
+
+
+
+

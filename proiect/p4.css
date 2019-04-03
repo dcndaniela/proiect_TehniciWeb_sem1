@@ -1,0 +1,243 @@
+
+
+h1{font-size:3vw;}
+h2{font-size:2vw;}
+h3{font-size:1.8vw;}
+h4{font-size:1.5vw;}
+
+#cam {
+  box-sizing: border-box;
+  padding: 16px;
+  width: 100%;
+  background-color: red;
+  color: #fff;
+}
+.closebtn {
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.closebtn:hover {
+  color: #000;
+}
+
+
+
+rb1{
+color:yellow;}
+
+
+table{
+	border:dotted double blue;
+    border-collapse: collapse;
+	width: 50%;
+	height: auto;
+	font-size:1vw;
+}
+th, td{
+	text-align: left;
+	padding: 8px;
+}
+tr:nth-child(2n){background-color: pink}
+#hei{
+overflow-x:auto;
+align:right;}
+
+body{
+background: linear-gradient(-140deg, #ff3333, white, #3385ff);
+font-size:2vw;}
+img{
+	width: 20%;
+height: auto;
+border-radius:100px;
+font-size:2vw;}
+
+
+
+
+.sigla{
+	height:40%;
+width:auto;
+font-size:1.5vw;}
+
+.juc2{
+	height:auto;
+width:40%;
+margin-left:20px;
+}
+
+body{
+	  font-size:2vw;
+}
+
+
+.plin{
+	width:35%;
+height:auto;}
+
+
+.stadi1{
+width:50%;
+border:solid yellow 10px;
+border-radius:100px;	
+height:auto;
+}
+/*stadionul in prezent*/
+.prez{
+	width:40%;
+	position:center;
+height:auto;
+border-radius:50%;
+  font-size:2vw;}
+
+.viit{
+	width:40%;
+	margin-left:700px;
+height:auto;
+border-radius:50%;
+  font-size:2vw;
+}
+
+.trec{
+	width:40%;
+	margin-left:700px;
+height:auto;
+border-radius:50%;
+  font-size:2vw;}
+
+h1, h2, h3, h4{
+	margin-left:30px;
+margin-right:30px;}
+
+
+span {
+    color: blue;
+	border:4px dotted brown;
+    border-radius: 4px;
+}
+
+.stadion{
+color:green;}
+
+.button {
+    background-color: gray;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: right;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+	font-size:2vw;
+	
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  font-size:2vw;
+}
+
+.button span:before {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  font-size:2vw;
+}
+
+.button:hover span {
+  padding-left: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+ right: 0;
+}
+
+.lista{
+color:red;}
+
+
+#da1{
+color:red;
+border:none;}
+#da2{
+color:blue;
+border:none;
+}
+
+/* stilizare buton stergere elem din lista*/
+
+.cul{
+color: #4da6ff;}
+
+#verde{
+color:green;}
+.but2{
+	background-color: #4CAF50; /* verde */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.bs1{
+	 display: inline-block;
+	 padding:10px 11px;
+     background-color:red;
+}
+/* butonul "Dupa"  */
+.bs2{	
+ display: inline-block;
+	 padding:10px 11px;
+background-color:yellow;
+margin-left:720px;}
+
+
+.bs3{
+	 display: inline-block;
+	 padding:10px 11px;
+     background-color:#33ccff;
+	 margin-left:720px;
+}
+
+#divul1 {
+  width: 350px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+
+#divul2 {
+  width: 350px;
+  height: 70px;
+  padding: 10px;
+  border: 1px dotted #aaaaaa;
+}
+
+#divul3 {
+  width: 350px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,529 @@
+<html lang="ro">
+<head>
+ <!--<link rel="stylesheet" href="p4.css">
+ <script src="j4.js"></script>  -->
+ <title>Stadionul de fotbal </title>
+ 
+ 
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" 
+integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" 
+crossorigin="anonymous">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+ 
+  
+  <style>
+  
+
+h1{font-size:3vw;}
+h2{font-size:2vw;}
+h3{font-size:1.8vw;}
+h4{font-size:1.5vw;}
+
+#cam {
+  box-sizing: border-box;
+  padding: 16px;
+  width: 100%;
+  background-color: red;
+  color: #fff;
+}
+.closebtn {
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.closebtn:hover {
+  color: #000;
+}
+
+
+
+rb1{
+color:yellow;}
+
+
+table{
+	border:dotted double blue;
+    border-collapse: collapse;
+	width: 50%;
+	height: auto;
+	font-size:1vw;
+}
+th, td{
+	text-align: left;
+	padding: 8px;
+}
+tr:nth-child(2n){background-color: pink}
+#hei{
+overflow-x:auto;
+align:right;}
+
+body{
+background: linear-gradient(-140deg, #ff3333, white, #3385ff);
+font-size:2vw;}
+img{
+	width: 20%;
+height: auto;
+border-radius:100px;
+font-size:2vw;}
+
+
+
+
+.sigla{
+	height:40%;
+width:auto;
+font-size:1.5vw;}
+
+.juc2{
+	height:auto;
+width:40%;
+margin-left:20px;
+}
+
+body{
+	  font-size:2vw;
+}
+
+
+.plin{
+	width:35%;
+height:auto;}
+
+
+.stadi1{
+width:50%;
+border:solid yellow 10px;
+border-radius:100px;	
+height:auto;
+}
+/*stadionul in prezent*/
+.prez{
+	width:40%;
+	position:center;
+height:auto;
+border-radius:50%;
+  font-size:2vw;}
+
+.viit{
+	width:40%;
+	margin-left:700px;
+height:auto;
+border-radius:50%;
+  font-size:2vw;
+}
+
+.trec{
+	width:40%;
+	margin-left:700px;
+height:auto;
+border-radius:50%;
+  font-size:2vw;}
+
+h1, h2, h3, h4{
+	margin-left:30px;
+margin-right:30px;}
+
+
+span {
+    color: blue;
+	border:4px dotted brown;
+    border-radius: 4px;
+}
+
+.stadion{
+color:green;}
+
+.button {
+    background-color: gray;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: right;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+	font-size:2vw;
+	
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  font-size:2vw;
+}
+
+.button span:before {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  font-size:2vw;
+}
+
+.button:hover span {
+  padding-left: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+ right: 0;
+}
+
+.lista{
+color:red;}
+
+
+#da1{
+color:red;
+border:none;}
+#da2{
+color:blue;
+border:none;
+}
+
+/* stilizare buton stergere elem din lista*/
+
+.cul{
+color: #4da6ff;}
+
+#verde{
+color:green;}
+.but2{
+	background-color: #4CAF50; /* verde */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.bs1{
+	 display: inline-block;
+	 padding:10px 11px;
+     background-color:red;
+}
+/* butonul "Dupa"  */
+.bs2{	
+ display: inline-block;
+	 padding:10px 11px;
+background-color:yellow;
+margin-left:720px;}
+
+
+.bs3{
+	 display: inline-block;
+	 padding:10px 11px;
+     background-color:#33ccff;
+	 margin-left:720px;
+}
+
+#divul1 {
+  width: 350px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+
+#divul2 {
+  width: 350px;
+  height: 70px;
+  padding: 10px;
+  border: 1px dotted #aaaaaa;
+}
+
+#divul3 {
+  width: 350px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+
+  
+  </style>
+  
+  
+  <script>
+  window.onload=function(){
+var x2=document.getElementById("st1");
+x2.onclick=salut;
+var x3=document.getElementById("but2");
+//b1.sterg;
+
+
+//localStorage 
+
+if (typeof(Storage) !== "undefined") {
+  if (localStorage.pagecount) {
+    localStorage.pagecount = Number(localStorage.pagecount)+1;
+  } else {
+    localStorage.pagecount = 1;
+  }
+  document.getElementById("cam1").innerHTML = "You have visited this page " + localStorage.pagecount + " time(s).";
+} else {
+  document.getElementById("cam1").innerHTML = "Sorry, your browser does not support web storage...";
+}
+
+}
+
+function salut(){
+var x= document.getElementById("st1");
+y=x;
+alert ("Acest site utilizeaza cookies.Navigand pe acest site va manifestati acordul cu privire la prelucrarea datelor.");
+y.src="stadion2.jpg";
+x.style.width="50%";
+x.style.border="solid green 10px";
+x.style.borderRadius="100px";
+x.onclick=hei;
+}
+
+function hei(){
+var x=document.getElementById("st3");
+ y=x;
+ alert("stadionul inaintea lucrarilor de demolare");
+y.src="stadion3.jpg";
+x.style.width="50%";
+x.style.border="solid green 10px";
+x.style.borderRadius="100px";
+x.onclick=revenire;
+}
+
+
+function revenire(){
+var x=document.getElementById("st1");
+x.src="stadion.jpg";
+//x.style="auto";
+x.onclick=hei;
+}
+
+function sterg() {
+    var list = document.getElementById("myList");
+    list.removeChild(list.childNodes[0]);
+}
+
+ 
+function stad4() {
+    var x = document.createElement("FIGCAPTION");
+    var t = document.createTextNode("Fig.2 -In prezent:dupa initierea demolarilor");
+    x.appendChild(t);
+    var y = document.getElementById("st4");
+   y.appendChild(x);
+}
+
+function stad5() {
+    var x = document.createElement("FIGCAPTION")
+    var t = document.createTextNode("Fig.3 -In viitor(2019-2020)");
+    x.appendChild(t);
+    var y = document.getElementById("st5");
+    y.appendChild(x);
+}
+
+function stad6() {
+    var x = document.createElement("FIGCAPTION");
+    var t = document.createTextNode("Fig.1 -trecut('50)");
+    x.appendChild(t);
+    var y = document.getElementById("st6");
+    y.appendChild(x);
+}
+
+
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) { /*returneaza data care e trasa(imaginea) */
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}  
+  </script>
+  
+  
+  
+ 
+ 
+</head>
+
+<header>
+<div class="cotainer">
+
+<i><h6>"Cel mai bun balon de oxigen e balonul de fotbal."</i></h6></header>
+
+<body>
+
+<h3><span id="da1"> CSA  </span> <span id="da2"> STEAUA </span> </h3>
+ <img class="sigla" src="sigla.jpg"  align="right">  
+</p>
+
+
+
+
+
+<div id="cam">
+  <span onclick="this.parentElement.style.display = 'none';" class="closebtn">&times;</span>
+ <h6> <p>We'd like to show you notifications for the latest news and updates. If you want to find out more about our policy, please read our terms and conditions.</p></h6>
+<div id="cam1"></div>
+  </div>
+
+  <center>
+  <h5>
+  <a href="pr1.html">Home</a>|<a href="page2.html">Scurt istoric</a>|<a href ="page3.html">Peluza</a>|<b>Stadionul</b></h5>
+  </center>
+  </header>
+
+ <br>
+ <div id="verde"> 
+ 
+ <p ><h5> Lotul de <i>jucători</i> pentru sezonul 2017-2018 </p></h5> </div>
+  <img class="juc2" src="juc2.jpg" align="left">
+ <h4> 
+ <div id="hei">
+ <table align="right">
+  <tr>
+    <th>Nr</th>
+    <th>Pozitie</th> 
+    <th>Jucator</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Portar</td>
+    <td>Claudiu Chis</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Fundas</td>
+    <td>Mihai Butoiu</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Fundas</td>
+    <td>Andrei Grigore</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Fundas</td>
+    <td>Stefan Paduret</td>
+	</tr>
+ <tr>
+    <td>5</td>
+    <td>Fundas</td>
+    <td>Eduard Radu</td>
+	</tr>
+ <tr>
+    <td>6</td>
+    <td>Mijlocas</td>
+    <td>Mihai Lolescu</td>
+	</tr>
+ <tr>
+    <td>7</td>
+    <td>Mijlocas</td>
+    <td>Andrei Patranoiu</td>
+	</tr>
+ <tr>
+    <td>8</td>
+    <td>Mijlocas</td>
+    <td>Cadolar Curt</td>
+	</tr>
+ <tr>
+    <td>9</td>
+    <td>Aparator</td>
+    <td>Catalin Mirea</td>
+	</tr>
+ <tr>
+    <td>10</td>
+    <td>Mijlocas</td>
+    <td>Alin Predescu</td>
+	</tr>
+    <td>11</td>
+    <td>Mijlocas</td>
+    <td>Junior Macris</td>
+	</tr>
+</table>
+</div>
+</h4>
+
+<img class="stadi1" src="stadion.jpg" id="st1" > 
+<h6>
+<i><p class="cul">dati click pe imagine </p></i>
+<p>  Situat in zona de vest a Bucurestiului, în sectorul 6, <b>Complexul Sportiv Steaua – Ghencea</b> este unul dintre cele mai mari complexuri
+ multisport din Romania.<br> Ghencea și-a câștigat celebritatea în timp, direct proporțional cu performanțele interne și internaționale ale sportivilor
+ militari care s-au pregătit și au concurat, precum și cu marile victorii trăite în direct de suporterii steliști alături de echipele de fotbal sau de rugby.
+<br>Întins pe o suprafață generoasă, complexul asigură posibilități optime de pregătire și antrenament pentru șapte discipline sportive, respectiv scrimă, 
+gimnastică, tenis, înot, polo,rugby și fotbal </p>
+</h6>
+<center>
+<header><h5> <p class="stadion" id="rb1"> STADIONUL DE FOTBAL </p></h5>
+<h6>
+<p> <img class="plin" src="stadionplin.jpg" id="st3" >  Construit prin strădaniile și cu aportul direct al militarilor Armatei Române, constituiți în detașamentele de lucru ale unităților de geniu sau construcții care au realizat, pentru acele vremuri, o adevărată bijuterie a Europei de sud-est,
+ stadionul a fost inaugurat pe 9 aprilie 1974, cu ocazia unui meci de fotbal dintre echipele Steaua București și OFK Belgrad.  De atunci și până 
+ în prezent, stadionul a cunoscut mai multe faze de amenajări și modernizări, care au avut rolul de a asigura toate condițiile de pregătire, cazare, 
+ masă și competiție, atât pentru echipa de fotbal seniori, cât și pentru copii din Centrul de copii și juniori. </p>
+
+ </center>
+ </h6>
+
+ 
+ <h5><p>Amenajari:</p></h5>
+<i>
+<ul class="lista" id="myList">
+<h6> 
+ <li>Stadion principal cu capacitate de aproximativ 30.000 locuri</li>
+  <li>Tribuna oficială cu loje, fotolii, spații de birouri și săli de antrenament</li>
+  <li>Minihotel, la tribuna a doua;</li>
+  <li>Restaurant </li>
+  <li> Spații de recuperare, sali conferințe</li>
+  <li>Centru de copii și juniori cu teren propriu </li>
+  <li> Terenuri de antrenament</li></ul></i>
+  <button class="but2" onclick="sterg()">Press 7 times</button>
+</h6>
+
+<button class="bs3" onclick="stad6()" >Trecut</button>
+<figure id="st6"><img class="trec" src="inainte.jpg" alt="ianinte" ></figure>
+
+<button class="bs1" onclick="stad4()" >Prezent</button>
+<figure id="st4"><img class="prez" src="stadiondistrus.jpg"  ></figure>
+
+<button class="bs2" onclick="stad5()" >Viitor</button>
+<figure id="st5"><img class="viit"src="stadionviitor.jpg" ></figure>
+
+<p>Asezati imaginile in ordine cronologica:</p><br>
+<div id="divul1" ondrop="drop(event)" ondragover="allowDrop(event)"></div> <!-- cand elem draggable e pozitionat in drop target --> 
+<br>
+<div id="divul2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<div id="divul3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+
+
+</div>
+<img id="drag1" src="1948.jpg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag2" src="1950.jpg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+<img id="drag3" src="1949.jpg" draggable="true" ondragstart="drag(event)" width="336" height="69">
+
+
+ <form action="file:///C:/Users/Dani/Desktop/licenta-info/an2/teh_Web/proiect1/page3.html" method="get">
+  <button class="button" formaction="file:///C:/Users/Dani/Desktop/licenta-info/an2/teh_Web/proiect1/page3.html"><span>Prev</span></button>
+ 
+  </body>  
+  </html>
